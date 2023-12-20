@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.container {
+
+    height: 100vh;
+    /* KAPSAYICIYI YANİ BURDAKİ ARKA PLAN FOTOSUNU TÜM SAYFAYA YERLEŞTİRİR*/
+    padding-left: 8%;
+    padding-right: 8%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./resim/arkaplan.jpg);
+    /* linear gradient arka plan resmini karanlık yapar*/
+    background-position: center;
+    /* ARKA PLAN FOTOSUNU ORTALAR*/
+    background-size: cover;
+    /* BU DA ARKA PLAN RESMİ İLE ALAKALI*/
+
+}
+p{
+    color: #fff;
+    font-size: 12px;
+    line-height: 16px;
+}
+.btn{
+    color: #000;
+    background-color: rgb(116, 108, 108);
+    border: 1px solid rgb(179, 160, 160);
+    border-radius: 20px;
+    padding: 12px 28px;
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight:700;
+    cursor: pointer;
+    transition: ease-out 0.4s;
+    text-decoration: none;
+}
+.btn:hover{
+    color: #fff;
+    background-color: #000;
+    border-color: #fff;
+
+
+}
+
+.navbar {
+    height: 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    column-gap: 20px;
+
+}
+
+a img {
+    width: 80px;
+    padding-left: 10%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: ease-in 0.3s;
+
+}
+
+nav ul li a:hover {
+    color: yellow;
+    background-color: rgb(143, 137, 137);
+    
+
+
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    height: 88%;
+
+}
+h1{
+    color: #fff;
+    font-size: 100px;
+}
+.col{
+    flex-basis: 50%; /* COL OLAN ŞEYİ SAĞ VE SOLA EŞİT AYIRIR*/
+}
+.cards{
+    max-width: 500px;
+    margin: auto;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    border: 1px solid rgb(78, 77, 77);
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    margin: 10px 15px;
+    cursor: pointer;
+    
+
+}
+.card:hover{
+    transform: translateY(-10px);
+    transition: ease 0.4s;
+    border-color: #fff;
+}
+.card .card-head{
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 6px;
+    padding: 5px;
+    margin-bottom: 105px;
+}
+.card.card1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./resim/siyahtog.jpg);
+
+}
+.card.card2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./resim/audi.jpg);
+}
+.card.card3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./resim/bmw.jpg);
+}
+.card.card4{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./resim/mercedes.webp);
+}
